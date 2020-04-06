@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %} Signup form{% endblock %}
+
+{% block content %}
+
+    <h1> Registre su usuario </h1>
+
+    <div class="container">
+        {{ wtf.quick_form(signup_form) }}
+    </div>
+{% endblock %}
